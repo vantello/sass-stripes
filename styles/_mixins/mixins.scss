@@ -1,0 +1,21 @@
+@mixin nomDelMixin($param1, $param3,$param3){
+    //el que volguem
+    width: $param1;
+    height: $param2;
+    color: $param3;
+}
+// Per exportarlo, s'ha de cridar amb @include nomDelMixin dins
+// d'on volguem cridar-lo
+
+// @mixin keyframes ($stripe) {
+//     @keyframes $stripe{
+//         0% {
+//             -webkit-transform: translate3d(-100%, 0, 0);
+//                     transform: translate3d(-100%, 0, 0);
+//           }
+//           100% {
+//             -webkit-transform: translate3d(0, 0, 0);
+//                     transform: translate3d(0, 0, 0);
+//           }
+//     }
+// }

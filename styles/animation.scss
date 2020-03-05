@@ -1,0 +1,31 @@
+//translacions 
+$t1: (-100%, 0, 0);
+$t2: (0, 100%, 0);
+$t3: (0, -100%, 0);
+$t4: (0, 100%, 0);
+$t5: (100%, 0, 0);
+
+// $t1: -100;
+// $t2: 100;
+// $t3: -100;
+// $t4: 100;
+// $t5: 100;
+
+$translates: $t1, $t2, $t3, $t4, $t5;
+
+
+@for $i from 1 through 5 {
+    @keyframes strip#{$i}{
+        0% {
+            transform: translate3d(nth($translates, $i));
+          }
+        100% {
+            transform: translate3d(0, 0, 0);
+          }
+    }
+}
+
+
+
+
+
